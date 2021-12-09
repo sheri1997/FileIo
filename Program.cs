@@ -10,6 +10,9 @@ namespace FileIO
             FileExists();
             readLines();
             readText();
+            StreamReaderClass.writePath();
+            StreamReaderClass.readPath();
+
         }
         public static void FileExists()
         {
