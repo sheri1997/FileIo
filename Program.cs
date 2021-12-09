@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace FileIO
 {
@@ -6,7 +7,19 @@ namespace FileIO
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the File IO Program");
+            FileExists();
+        }
+        public static void FileExists()
+        {
+            string path = @"D:\Brize\github\FileIO\file.txt";
+            if (File.Exists(path))
+            {
+                Console.WriteLine("File is Present");
+            }
+            else
+            {
+                Console.WriteLine("No File is Present");
+            }
         }
     }
 }
