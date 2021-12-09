@@ -8,6 +8,8 @@ namespace FileIO
         static void Main(string[] args)
         {
             FileExists();
+            readLines();
+            readText();
         }
         public static void FileExists()
         {
@@ -20,6 +22,20 @@ namespace FileIO
             {
                 Console.WriteLine("No File is Present");
             }
+        }
+        public static void readLines()
+        {
+            string path = @"D:\Brize\github\FileIO\file.txt";
+            string[] lines;
+            lines = File.ReadAllLines(path);
+            Console.WriteLine(lines[0]);
+        }
+        public static void readText()
+        {
+            string path = @"D:\Brize\github\FileIO\file.txt";
+            string lines;
+            lines = File.ReadAllText(path);
+            Console.WriteLine(lines);
         }
     }
 }
