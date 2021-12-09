@@ -7,12 +7,13 @@ namespace FileIO
     {
         static void Main(string[] args)
         {
-            FileExists();
-            readLines();
-            readText();
-            StreamReaderClass.writePath();
-            StreamReaderClass.readPath();
-
+            //FleExists();
+            //readLines();
+            //readText();
+            //StreamReaderClass.writePath();
+            //StreamReaderClass.readPath();
+            BinarySerizable.serialiZed();
+            BinarySerizable.deSeializabe();
         }
         public static void FileExists()
         {
